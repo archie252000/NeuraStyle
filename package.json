@@ -1,0 +1,17 @@
+{
+  "name": "neurastyletransfer",
+  "version": "1.0.0",
+  "description": "Upload a content  image and a style image to transfer the style of the style image to the content image",
+  "main": "index.js",
+  "scripts": {
+    "client": "cd client && npm start",
+    "server": "cd Server/env/Scripts/ && flask run",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Aaryavrat Arora",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0"
+  }
+}
+
