@@ -1,7 +1,5 @@
 # NeuralStyleTransfer
-The objective of this application is to transfer the style of one image to the other.
-The image from which the style is to be transferred is called 'Style Image' and the image to which style is to be applied is calle 'Content Image'
-This is an implementaion inspired the orignal Neural Style Transfer (Link: https://arxiv.org/abs/1508.06576)
+The objective of this application is to transfer the style of one image to the other. The image from which the style is to be transferred is called 'Style Image' and the image to which style is to be applied is called 'Content Image' This is an implementation inspired by the original Neural Style Transfer (Link: https://arxiv.org/abs/1508.06576)
 ## Application in action
 > ### LANDING PAGE
 ![alt text](AppImages/NST1.JPG)
