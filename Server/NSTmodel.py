@@ -68,7 +68,7 @@ class NST:
     self.alpha = 1e-2
     self.beta = 1e4
     self.epochs = 5
-    self.steps_per_epoch = 20
+    self.steps_per_epoch = 50
 
  
   

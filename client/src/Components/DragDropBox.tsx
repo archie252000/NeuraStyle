@@ -66,9 +66,11 @@ const DragDropBox: React.FC<Props> = ({image_type, style_fun, content_fun}) => {
                           <span className="sr-only">Loading...</span>
                           </div>):(<Fragment></Fragment>)}
             
-            <img id='imgPrime' src={imagePath} height= '300px' width='auto'  />
+            <img className='imgPrime' src={imagePath}   />
+<div className = "uploadButton">
 
             <label htmlFor ={image_type +"file"} className="btn btn-primary bg-primary"><i className="fa fa-upload" aria-hidden="true"></i> UPLOAD FILE</label>
+</div>
 
         </div> 
     )

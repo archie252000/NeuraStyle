@@ -61,7 +61,7 @@ export const GetImages: React.FC = () => {
             <DragDropBox {...PropsContent}/>
             <DragDropBox {...PropsStyle} />
         </div>
-        <div className="tr-bt"><button type="button" className="btn btn-primary transfer-button" onClick = {transfer}>TRANSFER</button></div>
+        <div ><button type="button" className="tr-bt btn btn-primary transfer-button" onClick = {transfer}>TRANSFER</button></div>
     </div>):(<div className='TransferPage'>
            <div className="transferimage">
                <h2 className='transfer-heading'>Image with changed style</h2>
@@ -74,7 +74,7 @@ export const GetImages: React.FC = () => {
                          </div>):(<Fragment></Fragment>)
              }
            
-            <img id='imgPrime' src={transferImagePath} height='300px' width='auto'  />
+            <img className ='imgPrime' src={transferImagePath}   />
            </div>
         </div>)
     }
