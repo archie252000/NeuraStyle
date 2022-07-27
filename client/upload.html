@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script defer type="text/javascript" src="ripple-effect.js"></script>
+    <script defer type="text/javascript" src="main.js"></script>
+
+    <title>Neura Style</title>
+</head>
+
+<body>
+    <!-- Image and text -->
+
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="./assets/logo.png" class="me-2" height="30" alt="MDB Logo" loading="lazy" />
+                <small>Neura Style</small>
+            </a>
+            <div id="transfer-button-wrapper">
+                <button type="submit" id="transfer-button" class="my-btn">
+            Transfer
+          </button>
+            </div>
+        </div>
+    </nav>
+    <div id="instructions">
+        Welcome to Neura Style!<br />Upload two images, a style image and a content image. Click transfer button above to transfer the style of style image to content image!
+    </div>
+    <section id="upload-page">
+        <section id="content-image-wrapper">
+            <div class="upload-box">
+                <h3 class="image-heading">Content Image</h3>
+                <div class="drop-zone">
+                    <span class="drop-zone__prompt">Drop file here or click to upload</span
+            >
+            <input
+              type="file"
+              name="content-image"
+              id="content-image"
+              accept="image/png, image/gif, image/jpeg"
+              class="drop-zone__input"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section id="style-image-wrapper">
+        <div class="upload-box">
+          <h3 class="image-heading">Style Image</h3>
+          <div class="drop-zone">
+            <span class="drop-zone__prompt"
+              >Drop file here or click to upload</span
+            >
+            <input
+              type="file"
+              name="style-image"
+              id="style-image"
+              accept="image/png, image/gif, image/jpeg"
+              class="drop-zone__input"
+              required
+            />
+          </div>
+        </div>
+      </section>
+      <section id="result-image-wrapper">
+        <div class="result-box">
+          <div
+            class="spinner-border text-primary"
+            role="status"
+            id="my-spinner"
+          >
+            <span class="visually-hidden">Loading...</span>
+                </div>
+                <img id="result-image" />
+            </div>
+        </section>
+    </section>
+</body>
+
+</html>

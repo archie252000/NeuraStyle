@@ -38,7 +38,9 @@ def getTransferImage():
         img.save(rawBytes, "JPEG")
         rawBytes.seek(0)
         img = base64.b64encode(rawBytes.read())
-    return jsonify({'status':str(img)})
+        response = jsonify({'status':str(img)})
+        response.headers.add("Access-Control-Allow-Origin", "*")
+    return response
     
     
     
