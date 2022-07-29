@@ -11,7 +11,6 @@ For example, we need to make the picture of the castle in the style of the paint
 3) [Demo Video](#video)
 4) [Setup](#setup)
 5) [Usage](#usage)
-6) [License](#license)
 
 
 <a name="info"/>
@@ -68,12 +67,43 @@ function transferStyle(S, C):                  // S is style image and C is cont
 - **Other:** Tensorflow, PIL, Python
 
 
-<a name="architecture"/>
+<a name="video"/>
 
-### Demo Video
-https://user-images.githubusercontent.com/51921550/181789876-fae4c21b-0664-4645-8f7a-1f4efa58c4f6.mp4
+## Demo Video
+https://user-images.githubusercontent.com/51921550/181816675-bfc7a7a2-71d4-4b37-ab02-49529c69dde3.mp4
+
+## Setup
+#### Client side
+Open index.html or run with live server in VSCode.
+
+#### Server side
+```
+cd Server
+.\env\Scripts\activate
+Python -m pip install -r requirements.txt
+Flask run
+```
 
 
+## Usage
+1) On the Landing page Click in start
 
+![image](https://user-images.githubusercontent.com/51921550/181819986-a27c2a1e-abd7-478a-87ad-45697e1c3bee.png)
+
+2) Upload two images(A style and a content image)
+
+![image](https://user-images.githubusercontent.com/51921550/181820108-fe266750-adfd-4831-a7a1-59e322d86dda.png)
+
+3) Click on transfer button on the top
+
+![image](https://user-images.githubusercontent.com/51921550/181820287-55cfb281-b402-477a-b562-1e1e1b4f1120.png)
+
+4) Wait
+
+![image](https://user-images.githubusercontent.com/51921550/181820334-b4209902-fda6-450e-9a39-e48a0a3d8fca.png)
+
+5) Final Result
+
+![image](https://user-images.githubusercontent.com/51921550/181821890-407e9ed9-b5c0-4534-b21f-c0c762ae6b59.png)
 
 
