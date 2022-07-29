@@ -88,7 +88,8 @@ const styleImage = document.getElementById("style-image");
 const transferButton = document.getElementById("transfer-button");
 
 const resultImage = document.getElementById("result-image");
-console.log(resultImage);
+
+const baseUrl = "http://localhost:5000";
 
 transferButton.addEventListener("click", (e) => {
     e.preventDefault();
@@ -109,7 +110,7 @@ transferButton.addEventListener("click", (e) => {
     };
 
     axios
-        .post("http://localhost:5000/get_transfer_image", formData, config)
+        .post(baseUrl + "/get_transfer_image", formData, config)
         .then((res) => {
             const bytestring = res.data["status"];
             let image = bytestring.split("'")[1];
