@@ -82,7 +82,8 @@ Python -m pip install -r requirements.txt
 Flask run
 ```
 #### Client side
-> **Note:* after running the server, check the port number and change the **baseUrl** accordingly in main.js in client folder
+> **Note:** after running the server, check the port number and change the **baseUrl** accordingly in main.js in client folder
+
 Open index.html or run with live server in VSCode.
 
 
