@@ -3,9 +3,7 @@ NeuraStyle is a web application that is used to stylize an image that is uploade
 For example, we need to make the picture of the castle in the style of the painting(Shown Below).
 | Content Image  | Style Image | Result |
 | ------------- | ------------- | ------------- |
-
-
-
+|![ST-01-min](https://user-images.githubusercontent.com/51921550/181769458-12a1ab74-ac9a-4596-bb37-e15503728d09.jpg) |![ST-02](https://user-images.githubusercontent.com/51921550/181769167-b0cbd3af-ce1a-4a41-b41a-e1cbdd70f264.jpg)| ![ST-03](https://user-images.githubusercontent.com/51921550/181769207-fc2325ec-c76d-4db6-b7f1-1f7a33c6d283.jpg)| 
 
 # Table of Content
 1) [Detailed Information](#info)  
@@ -68,6 +66,14 @@ function transferStyle(S, C):                  // S is style image and C is cont
 - **Frontend:** Html, Css, JavaScript
 - **Backend:** Flask
 - **Other:** Tensorflow, PIL, Python
+
+
+<a name="architecture"/>
+
+### Demo Video
+https://user-images.githubusercontent.com/51921550/181789876-fae4c21b-0664-4645-8f7a-1f4efa58c4f6.mp4
+
+
 
 
 
