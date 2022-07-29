@@ -73,16 +73,19 @@ function transferStyle(S, C):                  // S is style image and C is cont
 https://user-images.githubusercontent.com/51921550/181816675-bfc7a7a2-71d4-4b37-ab02-49529c69dde3.mp4
 
 ## Setup
-#### Client side
-Open index.html or run with live server in VSCode.
 
 #### Server side
 ```
-cd Server
+cd NeuraStyleBackend/Server
 .\env\Scripts\activate
 Python -m pip install -r requirements.txt
 Flask run
 ```
+#### Client side
+> **Note:* after running the server, check the port number and change the **baseUrl** accordingly in main.js in client folder
+Open index.html or run with live server in VSCode.
+
+
 
 
 ## Usage
