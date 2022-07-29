@@ -1,21 +1,19 @@
 # NeuraStyle
 NeuraStyle is a web application that is used to stylize an image that is uploaded by the user. The objective of this application is to showcase a modified version of the Neural Style Transfer algorithm as delineated in [**this**](https://arxiv.org/abs/1508.06576) research paper and make an image appear in the style of another image.  
-For example, we need to transfer the style of image a to b.
+For example, we need to make the picture of the castle in the style of the painting(Shown Below).
 | Content Image  | Style Image | Result |
 | ------------- | ------------- | ------------- |
-| ![alt text](AppImages/NST1.JPG)  |![alt text](AppImages/NST1.JPG)|![alt text](AppImages/NST1.JPG)  |
-# Table of Contents  
+
+
+
+
+# Table of Content
 1) [Detailed Information](#info)  
 2) [Technologies used](#technologies)
 3) [Demo Video](#video)
 4) [Setup](#setup)
 5) [Usage](#usage)
 6) [License](#license)
-
-
-
-
-
 
 
 <a name="info"/>
@@ -37,7 +35,7 @@ The server provides a REST API which takes two Base64 images (**Content Image** 
 <a name="algo"/>
 
 ### Algorithm
-The algoritm uses a pretrainined VGG19 ConvNet. We pass the **Content Image** through the network upto a certain layer to compute the Content Error & and do the same with the **Style Image** to get Style Error. Then we use a weighted some of both the erros to get total error. As the total error of the function is a function of a  randomly generated image, optimizing it will return image with transfered style, so we use **Adam Optimizer** to do the same. For a detailed explanation of the algorithm, I encourage you to give the aforementioned paper a read. Althoug the algorithm used is a modified version of the one in the research paper, it is similar enough to understand what is happening by reading the paper. Below is the algorithm used :
+The algorithm uses a pretrainined VGG19 ConvNet. We pass the **Content Image** through the network up to a certain layer to compute the Content Error & and do the same with the **Style Image** to get Style Error. Then we use a weighted sum of both the errors to get the total error. As the total error of the function is a function of a  randomly generated image, optimizing it will return an image with transferred style, so we use **Adam Optimizer** to do the same. For a detailed explanation of the algorithm, I encourage you to give the aforementioned paper a read. Although the algorithm used is a modified version of the one in the research paper, it is similar enough to understand what is happening by reading the paper. Below is the algorithm used :
 ```
 function gramMatrix(Mat):
   return Mat * Mat.Transpose
@@ -62,19 +60,14 @@ function transferStyle(S, C):                  // S is style image and C is cont
    TotalCost = alpha*ContentCost + beta*StyleCost
    Adam.optimize(TotalCost)
   
-   return G
-   
+   return G  
+```
 <a name="technologies"/>
 
 ## Technologies
 - **Frontend:** Html, Css, JavaScript
 - **Backend:** Flask
 - **Other:** Tensorflow, PIL, Python
-
-
-  
-  
-```
 
 
 
